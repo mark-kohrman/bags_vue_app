@@ -1,6 +1,8 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import Home from '../views/Home.vue';
+import BagsIndex from '../views/BagsIndex.vue';
+
 
 Vue.use(VueRouter)
 
@@ -9,6 +11,11 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/bags',
+    name: 'BagsIndex',
+    component: BagsIndex
   },
   {
     path: '/about',
